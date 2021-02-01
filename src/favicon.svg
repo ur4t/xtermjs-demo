@@ -1,0 +1,19 @@
+<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        g {
+            fill: none;
+            stroke: black;
+        }
+        @media (prefers-color-scheme: dark) {
+        g {
+            fill: none;
+            stroke: white;
+        }
+        }
+    </style>
+    <g stroke-width="8">
+        <rect height="108" width="108" y="10" x="10"/>
+        <polyline points="30,30 50,50 30,70"/>
+        <polyline points="60,70 88,70"/>
+    </g>
+</svg>
