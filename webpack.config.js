@@ -1,5 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const SvgToMiniDataURI = require('mini-svg-data-uri');
+const svgToDataURI = require('mini-svg-data-uri');
 const path = require('path');
 const fs = require('fs');
 
@@ -99,7 +99,7 @@ module.exports = {
         collapseWhitespace: true,
       },
       templateParameters: {
-        inlinefavicon: SvgToMiniDataURI(fs.readFileSync(path.resolve(__dirname, 'src/favicon.svg') + '').toString()),
+        inlinefavicon: svgToDataURI(fs.readFileSync(path.resolve(__dirname, 'src/favicon.svg') + '').toString()),
       },
       template: "./template.html",
       title: "Terminal",

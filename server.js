@@ -45,6 +45,9 @@ app.ws('/tty', (ws, req) => {
             console.log(e)
           }
         });
+        term.onExit(() => {
+            ws.close()
+        });
         break;
     }
   })
